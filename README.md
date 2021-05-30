@@ -1,4 +1,5 @@
-# Source code for my course Programming in Blazor - ASP.NET Core 5
+# Source code for course Programming in Blazor - ASP.NET Core 5
+# copied over to work on examples.
 
 In this course you'll learn how to build Blazor applications from scratch
 
