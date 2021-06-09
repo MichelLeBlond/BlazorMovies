@@ -1,0 +1,26 @@
+﻿
+@if (Movies == null)
+{
+   
+    <img src="https://media4.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp?cid=ecf05e47whghidgou1ifr7pzer0pciy7ohyoh7flged8dn94&rid=giphy.webp&ct=g"/>
+
+}
+else if (Movies.Count == 0)
+{
+    <text>no movies to show</text>
+}
+else
+{
+    @foreach (var movie in Movies)
+    {
+        <IndividualMovie  Movie="movie"/>
+    }
+
+       
+}
+
+@code {
+    [Parameter] public List<Movie> Movies { get; set; }
+
+   
+}
