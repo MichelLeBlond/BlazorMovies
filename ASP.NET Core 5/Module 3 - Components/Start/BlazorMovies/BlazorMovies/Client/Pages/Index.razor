@@ -7,11 +7,18 @@
 </div>
 <div>
     <h2>Create a movie s</h2>
-    <DummyTextbox  placeholder="moviename" disabled="false" />
+    <DummyTextbox  @attributes="dummyTextBoxParameters" />
 </div>
 
 @code{
     private List<Movie> movies;
+
+    private Dictionary<string, object> dummyTextBoxParameters = new Dictionary<string, object>()
+    { 
+        {"placeholder","new movie name 6"},
+        {"disabled","true"}
+
+    };
     protected  override void OnInitialized()
     {
         
